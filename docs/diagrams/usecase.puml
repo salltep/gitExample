@@ -46,6 +46,6 @@ UC_MenuM - UC_Repair
 UC_MenuM - UC_Check
 UC_MenuM - UC_WriteOff
 
-UC_Break ..> UC_BreakData : <<include>>
-UC_Repair ..> UC_SelectId : <<include>>
+UC_Break - UC_BreakData : <<include>>
+UC_Repair - UC_SelectId : <<include>>
 @enduml
