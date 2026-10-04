@@ -28,23 +28,23 @@ rectangle "Система учёта спортивного инвентаря" 
     usecase "Выбор инвентаря по ID" as UC_SelectId
 }
 
-Trainer --> UC_Reg
-Trainer --> UC_LoginT
-Manager --> UC_LoginM
+Trainer - UC_Reg
+Trainer - UC_LoginT
+Manager - UC_LoginM
 
-UC_LoginT --> UC_MenuT
-UC_LoginM --> UC_MenuM
-UC_LoginM --> UC_AddTrainer
+UC_LoginT - UC_MenuT
+UC_LoginM - UC_MenuM
+UC_LoginM - UC_AddTrainer
 
-UC_MenuT --> UC_Break
-UC_MenuT --> UC_View
-UC_MenuT --> UC_Give
-UC_MenuT --> UC_Take
+UC_MenuT - UC_Break
+UC_MenuT - UC_View
+UC_MenuT - UC_Give
+UC_MenuT - UC_Take
 
-UC_MenuM --> UC_AddItem
-UC_MenuM --> UC_Repair
-UC_MenuM --> UC_Check
-UC_MenuM --> UC_WriteOff
+UC_MenuM - UC_AddItem
+UC_MenuM - UC_Repair
+UC_MenuM - UC_Check
+UC_MenuM - UC_WriteOff
 
 UC_Break ..> UC_BreakData : <<include>>
 UC_Repair ..> UC_SelectId : <<include>>
